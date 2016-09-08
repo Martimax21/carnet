@@ -1,0 +1,25 @@
+{
+  "name": "adressbook",
+  "version": "1.0.0",
+  "description": "fun",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martimax21/carnet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martimax21/carnet/issues"
+  },
+  "homepage": "https://github.com/Martimax21/carnet#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "sqlite3": "^3.1.4"
+  }
+}

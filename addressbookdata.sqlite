@@ -1,0 +1,14 @@
+create table addressbook (
+id INTEGER PRIMARY KEY   AUTOINCREMENT,
+prenom CHAR(50),
+nom CHAR(50),
+telephone INTEGER,
+courriel text
+);
+
+INSERT INTO addressbook (prenom, nom, telephone, courriel) VALUES (
+'Maxime',
+'Martin',
+'1112223333',
+'max@gmail.com'
+);

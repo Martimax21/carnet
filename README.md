@@ -1,1 +1,3 @@
 # carnet
+
+Creating an address book with name, phone number, email and company
