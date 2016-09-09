@@ -49,21 +49,21 @@ app.post('/createperson', function(req, res) {
 
 app.get('/carnet', function(req, res) {
     console.log(req.body);
-
-
     addressbook.all("SELECT prenom, nom, telephone, courriel FROM addressbook", function(err, person) {
       console.log(person);
        res.render("carnet", {person});
     });
 
-
-
-
 })
 
-app.get('/*', function (req,res){
-  res.sendFile(path + "404.html");
-});
+app.get('/carnet/:sorting', function(req, res) {
+    console.log(req.params.sorting);
+    addressbook.all("SELECT prenom, nom, telephone, courriel FROM addressbook ORDER BY " + req.params.sorting, function(err, person) {
+      console.log(person);
+       res.render("carnet", {person});
+    });
+
+})
 
 
 
