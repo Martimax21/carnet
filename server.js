@@ -21,13 +21,6 @@ app.get('/', function (req,res){
   res.sendFile(path + "index.html");
 });
 
-app.get('/about', function (req,res){
-  res.sendFile(path + "about.html");
-});
-
-app.get('/contact', function (req,res){
-  res.sendFile(path + "contact.html");
-});
 
 app.get('/createperson', function (req, res) {
   res.sendFile(path + "createperson.html");
